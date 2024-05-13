@@ -1,54 +1,77 @@
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #3C5B6F;
+    font-family: 'Caveat', cursive;
+    background-color: #FEFAF6;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 
-.container {
+#profile{
     display: flex;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
 }
-.content-left, .content-right {
-    flex: 1;
-    border: 1px solid #ccc; /* Just for demonstration */
-    padding: 20px;
+
+.profile-pic{
+    height: 70vh;
+    border-radius: 100%;
+    -webkit-filter: grayscale(100%);
+    transition: filter 1s;
+}
+.profile-pic:hover{
+    filter: grayscale(0%);
+}
+
+.section_text_p1{
+    font-size: 2.5rem;
+}
+.section_text_p2{
+    font-size: 2.5rem;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #153448;
+    background-color: #EADBC8;
     padding: 10px 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav-brand {
-    font-size: 20px;
-    font-weight: bold;
-    color: #DFD0B8;
+    font-size: 50px;
+    color: #102C57;
     display: flex;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .nav-links {
     display: flex;
     list-style-type: none;
-    padding: 0;
-    margin: 10;
+    height: 5vh;
+    align-items: center;
 }
 
 .nav-links li {
     margin: 0 50px;
-    font-size: large;
+    font-size: 1.75rem;
 }
 
 .nav-links a {
-    color: #DFD0B8;
+    color: #102C57;
     text-decoration: none;
-    transition: font-weight .5s ease; /* Add transition for font size */
+    transition: all 300ms ease;
 }
 
 .nav-links a:hover {
-    font-weight: bold;
+    /* font-size:xx-large; */
+    text-underline-offset: 1rem;
+    text-decoration: underline;
 }
