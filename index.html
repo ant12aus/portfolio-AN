@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Nav Bar and JS to scroll to top -->
+  <nav class="navbar">
+    <div class="nav-brand" id="nav-brand">Anthony Nguyen</div>
+    <ul class="nav-links">
+        <li><a href="https://colorhunt.co/palette/1534483c5b6f948979dfd0b8" target="_blank">Color Pallete</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <script>
+    document.getElementById('nav-brand').addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+  </script>
+
+
+<!-- Profile Section to display cover page -->
+<section id="profile">
+    <div class="section_pic-container">
+        <img class="profile-pic" src="./images/AN.jpg" alt="Anthony Nguyen profile picture">
+    </div>
+    <div class="section_text">
+        <p class="section_text_p1">This is</p>
+        <h1 class="title">Anthony Nguyen</h1>
+        <p class="section_text_p2">Software Engineer</p>
+        <div class="section_links">
+          <a href="https://www.linkedin.com/in/anthony-nguyen-4289931b5/" target="_blank" class="section_link1">
+            <div class="centered-content">
+              <img src="images/linkedin.png" alt="LinkedIn">
+              LinkedIn
+            </div>
+          </a>        
+          <a href="https://github.com/ant12aus" target="_blank" class="section_link2">
+            <div class="centered-content">
+              <img src="images/github.png" alt="LinkedIn">
+              Github
+            </div>
+          </a>
+        </div>
+    </div>
+</section>
+
+
+<section id = "about">
+  <p class="section2_text_p1">Get To Know Me</p>
+</section>
+
+</body>
+</html>
+
