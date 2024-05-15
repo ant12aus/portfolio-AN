@@ -15,6 +15,53 @@ a{
     text-decoration: none;
 }
 
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #DAC0A3;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    height: 8vh;
+}
+.nav-brand {
+    font-size: 50px;
+    color: #102C57;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    height: 5vh;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 50px;
+    font-size: 1.75rem;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 0.05em;
+  bottom: 0;
+  left: 0;
+  background: currentcolor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 #profile{
     display: flex;
     height: 100vh;
@@ -75,66 +122,13 @@ a{
 
 
 #about{
-    display: flex;
-    height: 95vh;
-    justify-content: center;
+    height: auto;
     color: #102C57;
+    padding: 10vh;
 }
 .section2_text_p1{
     font-size: 5rem;
     text-decoration: underline;
     text-underline-offset: 1rem;
-}
-
-
-
-
-
-
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #DAC0A3;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 1000;
-}
-
-.nav-brand {
-    font-size: 50px;
-    color: #102C57;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.nav-links {
-    display: flex;
-    list-style-type: none;
-    height: 5vh;
-    align-items: center;
-}
-.nav-links li {
-    margin: 0 50px;
-    font-size: 1.75rem;
-}
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  border-radius: 5px;
-  height: 0.05em;
-  bottom: 0;
-  left: 0;
-  background: currentcolor;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-.nav-links a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    text-align: center;
 }
