@@ -160,16 +160,27 @@ li{
     -webkit-box-shadow: 0px 8px 56px 14px #000000; 
     box-shadow: 0px 8px 56px 14px #000000;
 }
-
 #about-image1{
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.col-image1 img{
-    height: 466px;
-    width:466px;
+#about-image1 h1{
+    text-align: center;
+    max-width: 524px;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.col-image1{
+    display: flex;
+    -webkit-box-shadow: 0px 8px 56px 14px #000000; 
+    box-shadow: 0px 8px 56px 14px #000000;
 }
 .col-image2 img{
+    height: 670px;
+    width:466px;
+}
+.col-image3 img{
     height: 670px;
     width:466px;
 }
