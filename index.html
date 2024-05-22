@@ -12,13 +12,26 @@
   <!-- Nav Bar and JS to scroll to top -->
   <nav class="navbar">
     <div class="nav-brand" id="nav-brand"><a href="#profile">Anthony Nguyen</a></div>
-    <ul class="nav-links">
+    
+    <ul class="nav-links" id="nav-links">
         <li><a href="https://colorhunt.co/palette/1534483c5b6f948979dfd0b8" target="_blank">Color Pallete</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#profile">Experience</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+</nav>
+<script>
+  document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('nav-links').classList.toggle('active');
+  });
+</script>
+
+
 
 <!-- Profile Section to display cover page -->
 <section id="profile">

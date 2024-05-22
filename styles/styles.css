@@ -210,27 +210,35 @@ li{
     flex-grow: 1;
 }
 
-@media only screen and (max-width: 768px) {
-    /* Adjustments for smaller screens */
+@media (max-width: 1082px) {
     .navbar {
-        padding: 10px; /* Decrease padding */
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-        height: auto; /* Allow navbar to expand based on content */
+        flex-direction: row;
+        align-items: flex-start;
+        height: auto;
     }
-    .nav-links {
-        display: flex;
-        flex-direction: column; /* Stack links vertically */
-        margin-top: 10px; /* Add margin to separate links from brand */
-    }
-    .nav-links li {
-        margin: 10px 0; /* Adjust margin for links */
-    }
+    
     .nav-brand {
-        font-size: 30px; /* Decrease font size of brand */
+        font-size: 35px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Hide by default */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show when active */
+        width: 35vh;
+        padding-left: 400px;
+        height: auto;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
     }
     .profile-pic {
-        height: 50vh; /* Decrease profile picture size */
+        height: 55vh; /* Decrease profile picture size */
     }
     .section_text_p1 {
         font-size: 1.5rem; /* Decrease font size */
@@ -264,5 +272,40 @@ li{
     }
     .section_links a {
         margin: 10px 0; /* Adjust margin */
+    }
+}
+
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    padding-right: 50px;
+    padding-top: 5px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #102C57;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 1082px) {
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 725px){
+    #profile{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-pic{
+        height: 40vh;
     }
 }
