@@ -219,6 +219,10 @@ li{
 .col-3-hidden{
     flex-grow: 1;
 }
+#experience{
+    height: 85vh;
+}
+
 
 @media (max-width: 1075px) {
     .navbar {
